@@ -1,50 +1,48 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function NavBar() {
   return (
     <nav className="bg-white border-b border-neutral-200">
       <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
         {/* Logo */}
-        <a href="/" className="flex items-center space-x-1">
-          <img
+        <Link href="/" className="flex items-center space-x-1">
+          <Image
             src="/Logo v2.png"
             className="h-20"
             alt="GovAsk Logo"
+            width={150}
+            height={200}
           />
           
-        </a>
+        </Link>
 
         {/* Menu items */}
         <div className="hidden md:block">
-          <ul className="flex space-x-10 text-lg font-medium">
+            <ul className="flex space-x-10 text-lg font-medium">
             <li>
-              <a
-                href="/"
-                className="text-neutral-800 hover:text-neutral-600 transition-colors"
+              <Link
+              href="/installation"
+              className="text-neutral-800 hover:text-neutral-600 transition-colors"
               >
-                Home
-              </a>
+              Installation
+              </Link>
             </li>
             <li>
-              <a
-                href="/installation"
-                className="text-neutral-800 hover:text-neutral-600 transition-colors"
+              <Link
+              href="/about"
+              className="text-neutral-800 hover:text-neutral-600 transition-colors"
               >
-                Installation
-              </a>
+              About Us
+              </Link>
             </li>
-            <li>
-              <a
-                href="/about"
-                className="text-neutral-800 hover:text-neutral-600 transition-colors"
-              >
-                About Us
-              </a>
-            </li>
-          </ul>
+            </ul>
         </div>
       </div>
     </nav>
   );
 }
+
 
 
 

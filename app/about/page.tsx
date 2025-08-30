@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Learn more about the GovAsk team and our vision for the future",
 };
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ title, children }: Readonly<{ title: string; children: React.ReactNode }>) {
   return (
     <section className="mb-12">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>

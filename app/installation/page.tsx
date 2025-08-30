@@ -10,11 +10,11 @@ function Section({
   id,
   title,
   children,
-}: {
+}: Readonly<{
   id: string;
   title: string;
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <section id={id} className="scroll-mt-24">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
@@ -27,11 +27,10 @@ function Section({
 
 function Code({
   children,
-  lang = "bash",
-}: {
+}: Readonly<{
   children: React.ReactNode;
   lang?: string;
-}) {
+}>) {
   return (
     <pre className="mt-4 overflow-x-auto rounded-xl border bg-neutral-50 p-5 text-base md:text-lg">
       <code className="whitespace-pre">{children}</code>
@@ -39,7 +38,7 @@ function Code({
   );
 }
 
-function Pill({ children }: { children: React.ReactNode }) {
+function Pill({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <span className="inline-block rounded-full border px-3 py-1 text-sm md:text-base font-medium text-neutral-700">
       {children}

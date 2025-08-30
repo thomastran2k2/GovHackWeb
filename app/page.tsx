@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Banner from "./components/Banner";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -145,12 +146,12 @@ export default function Home() {
           </div>
 
           <div className="mt-10 text-center">
-            <a
-              href="#"
+            <Link
+              href="/installation"
               className="inline-block rounded-xl bg-black text-white px-6 py-3 text-lg font-medium"
             >
               Open GovAsk
-            </a>
+            </Link>
           </div>
         </div>
       </section>
