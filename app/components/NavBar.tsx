@@ -5,11 +5,11 @@ export default function NavBar() {
         {/* Logo */}
         <a href="/" className="flex items-center space-x-1">
           <img
-            src="/GovAskLogo.png"
+            src="/Logo v2.png"
             className="h-20"
             alt="GovAsk Logo"
           />
-          <span className="text-2xl font-bold text-neutral-900">GovAsk</span>
+          
         </a>
 
         {/* Menu items */}

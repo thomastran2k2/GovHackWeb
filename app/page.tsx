@@ -5,41 +5,41 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-6 pt-14 pb-10 text-center">
+      <section className="bg-white min-h-screen flex items-center">
+        <div className="mx-auto max-w-6xl px-6 py-14 text-center">
           <div className="mx-auto mb-4">
-            <Image
-              src="/GovAskLogo.png"
-              alt="GovGPT logo"
-              width={256}   // px
-              height={256}  // px
-              className="mx-auto"
-            />
+        <Image
+          src="/GovAskLogo.png"
+          alt="GovGPT logo"
+          width={256}   // px
+          height={256}  // px
+          className="mx-auto"
+        />
           </div>
 
           <h1 className="text-5xl sm:text-5xl font-bold tracking-tight">
-            GovGPT — Accurate & Trustworthy Data Chatbot
+        GovAsk — Accurate & Trustworthy Data Chatbot
           </h1>
 
           <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-neutral-700 leading-relaxed">
-            Ask natural questions across your government datasets. GovAsk keeps answers
-            grounded in data, shows its working (audit trail), and avoids hallucinations.
-            Built for decisions where 90% is not enough.
+        Ask natural questions across your government datasets. GovAsk keeps answers
+        grounded in data, shows its working (audit trail), and avoids hallucinations.
+        Built for decisions where 90% is not enough.
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-6">
-            <a
-              href="#how-it-works"
-              className="rounded-xl bg-black text-white px-6 py-3 text-base md:text-lg font-semibold"
-            >
-              See how it works
-            </a>
-            <a
-              href="#try"
-              className="rounded-xl border px-6 py-3 text-base md:text-lg font-semibold"
-            >
-              Try sample queries
-            </a>
+        <a
+          href="#how-it-works"
+          className="rounded-xl bg-black text-white px-6 py-3 text-base md:text-lg font-semibold"
+        >
+          See how it works
+        </a>
+        <a
+          href="#try"
+          className="rounded-xl border px-6 py-3 text-base md:text-lg font-semibold"
+        >
+          Try sample queries
+        </a>
           </div>
         </div>
       </section>
