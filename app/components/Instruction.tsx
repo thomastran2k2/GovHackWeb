@@ -6,7 +6,7 @@ interface FeatureBoxProps {
   description: string;
 }
 
-export default function FeatureBox({ imageSrc = "/GovAskLogo.png", title, description }: FeatureBoxProps) {
+export default function FeatureBox({ imageSrc = "/GovAskLogo.png", title = "Step 1", description }: FeatureBoxProps) {
   return (
     <div className="flex flex-col md:flex-row items-center bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-700 rounded-3xl p-6 md:p-10 text-white shadow-lg gap-6">
       
