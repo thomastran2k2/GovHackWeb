@@ -34,7 +34,7 @@ export default function AboutUsPage() {
           We are a multidisciplinary team of developers, data scientists, and policy
           thinkers passionate about making public sector data more usable and
           trustworthy.  
-          Short placeholder text — replace with your real team details later.
+          
         </p>
       </Section>
 

@@ -62,8 +62,9 @@ export default function InstallationPage() {
         <div className="mt-5 flex gap-3">
           <Pill>Next.js</Pill>
           <Pill>TypeScript</Pill>
-          <Pill>Tailwind</Pill>
-          <Pill>API-ready</Pill>
+          <Pill>TailwindCSS</Pill>
+          <Pill>LLM</Pill>
+          <Pill>Python backend</Pill>
         </div>
       </div>
 
@@ -89,7 +90,7 @@ export default function InstallationPage() {
           <Section id="prereqs" title="Prerequisites">
             <ul className="list-disc pl-6 space-y-3">
               <li><a className="hover:underline" href="https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct">Llama 3</a> is installed.</li>
-              <li>Clone this <a className="hover:underline" href="https://github.com/your-repo">repo</a>.</li>
+              <li>Clone this <a className="hover:underline" href="https://github.com/thomastran2k2/GovAsk">repo</a>.</li>
               <li>Python installed</li>
             </ul>
           </Section>
@@ -122,7 +123,7 @@ export default function InstallationPage() {
             <ol className="list-decimal pl-6 space-y-3">
               <li>Open the app and connect an approved dataset.</li>
               <Image src="/step1.png" alt="GovAsk Logo" width={700} height={700} className="mx-auto" />
-              <li>Ask a question in plain English (e.g., “Show vendor payment outliers”).</li>
+              <li>Ask a question in plain English (e.g., “What is my forecast for 2027-28”).</li>
               <Image src="/step2.png" alt="Step 2" width={700} height={700} className="mx-auto" />
               <li>Review the answer and the audit trail (source, query, rows).</li>
               <Image src="/step3.png" alt="Step 3" width={700} height={700} className="mx-auto" />
@@ -134,7 +135,7 @@ export default function InstallationPage() {
           <Section id="deploy" title="Deploy">
             <p>Typical options:</p>
             <ul className="list-disc pl-6 space-y-3">
-              <li>Vercel (recommended for Next.js).</li>
+              
               <li>Containerised (Docker/Kubernetes) for internal hosting.</li>
               <li>Any Node-compatible hosting with environment variables set.</li>
             </ul>
@@ -150,7 +151,7 @@ EXPOSE 3000
 CMD ["npm", "start"]`}</Code>
           </Section>
 
-          <Section id="faq" title="FAQ (Short placeholders)">
+          <Section id="faq" title="FAQ (Frequently Asked Questions)">
             <div className="space-y-5">
               <details className="rounded-xl border p-5 text-lg">
                 <summary className="cursor-pointer font-semibold">

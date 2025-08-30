@@ -11,7 +11,7 @@ export default function Home() {
           <div className="mx-auto mb-4">
         <Image
           src="/GovAskLogo.png"
-          alt="GovGPT logo"
+          alt="GovAsk logo"
           width={256}   // px
           height={256}  // px
           className="mx-auto"

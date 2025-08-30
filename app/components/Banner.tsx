@@ -10,7 +10,7 @@ export default function Banner() {
       {/* Overlay content */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
         <h1 className="text-3xl md:text-5xl font-bold text-white">
-          Welcome to GovGPT — an application where government officials can easily
+          Welcome to GovAsk — an application where government officials can easily
           query and ask questions from datasets
         </h1>
 
